@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from './Button'
 
 class ProductCard extends Component {
   componentDidMount() {
@@ -14,9 +15,7 @@ class ProductCard extends Component {
         <div className="d-block">
           <h3 className="h5">{title}</h3>
           <p>{price}€</p>
-          <button className="btn btn-dark" onClick={handleAddToCart}>
-            Add to cart
-          </button>
+          <Button value="Add to Cart" className="btn btn-dark" onClick={handleAddToCart}/>
         </div>
       </div>
     );

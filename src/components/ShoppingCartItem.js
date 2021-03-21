@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from './Button';
 
 class ShoppingCartItem extends Component {
   componentDidMount() {
@@ -48,13 +49,7 @@ class ShoppingCartItem extends Component {
                         </select>
                       </div>
                       <div className="col col-6 col-lg-8">
-                        <button
-                          type="btn"
-                          className="btn btn-dark"
-                          onClick={handleRemove}
-                        >
-                          Remove
-                        </button>
+                        <Button value="Remove" className="btn btn-dark" onClick={handleRemove}/>
                       </div>
                     </div>
                   </div>
